@@ -5,6 +5,7 @@
   <title>Chuck Norris Fortune</title>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script type="text/javascript" language="javascript" src="./ajax/chuck_norris.json"></script> 
+  <script type="text/javascript" language="javascript" src="./js/rainbow.js"></script>
 </head>
 <body>
   <h1>Chuck Norris Fortune</h1>
@@ -25,6 +26,10 @@
     $(document).ready(function(e) {
         $quoteId = Math.floor(Math.random() * chuckJsonObject.value.length) + 1;
         $("#fortune span").text(chuckJsonObject.value[$quoteId].joke);
+    });
+
+    $(function() {
+      $('#fortune span').rainbow({animate:true,animateInterval:50,colors:['#FF0000','#f26522','#fff200','#00a651','#28abe2','#2e3192','#6868ff']});
     });
 
   </script>
