@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chuck Norris Fortune</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript" language="javascript" src="./ajax/chuck_norris.json"></script> 
+</head>
+<body>
+  <h1>Chuck Norris Fortune</h1>
+  <h2>Quote of the day:</h2>
+  <div id="fortune">
+    <span></span>
+  </div>
+   
+  <script>
+
+    $(document).ready(function(e) {
+        $quoteId = Math.floor(Math.random() * chuckJsonObject.value.length) + 1;
+        $("#fortune span").text(chuckJsonObject.value[$quoteId].joke);
+    });
+
+  </script>
+ 
+</body>
+</html>
