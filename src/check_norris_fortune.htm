@@ -26,11 +26,12 @@
     $(document).ready(function(e) {
         $quoteId = Math.floor(Math.random() * chuckJsonObject.value.length) + 1;
         $("#fortune span").text(chuckJsonObject.value[$quoteId].joke);
+        rainbowify($("#fortune span"));
     });
 
-    $(function() {
-      $('#fortune span').rainbow({animate:true,animateInterval:50,colors:['#FF0000','#f26522','#fff200','#00a651','#28abe2','#2e3192','#6868ff']});
-    });
+    function rainbowify($element) {
+      $element.rainbow({animate:true,animateInterval:20,colors:['#FF0000','#f26522','#fff200','#00a651','#28abe2','#2e3192','#6868ff']});
+    }
 
   </script>
  
