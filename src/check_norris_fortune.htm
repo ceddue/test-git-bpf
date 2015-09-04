@@ -33,6 +33,11 @@
       $element.rainbow({animate:true,animateInterval:20,colors:['#FF0000','#f26522','#fff200','#00a651','#28abe2','#2e3192','#6868ff']});
     }
 
+    $("#fortune span").on('change',function(){
+      // Apply rainbowify effect to quote when its text changes.
+      rainbowify($("#fortune span"));
+    });
+
   </script>
  
 </body>
