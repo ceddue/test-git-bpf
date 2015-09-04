@@ -12,8 +12,15 @@
   <div id="fortune">
     <span></span>
   </div>
+  <input type="button" id="refreshButton" value="refresh" style="margin-top:20px" />
    
   <script>
+
+    $('#refreshButton').click(function(e) {
+        $quoteId = Math.floor(Math.random() * chuckJsonObject.value.length) + 1;
+        // trigger a 'change' event that could be handled by another function when Chuck's quote is updated.
+        $("#fortune span").text(chuckJsonObject.value[$quoteId].joke).trigger('change');
+    });
 
     $(document).ready(function(e) {
         $quoteId = Math.floor(Math.random() * chuckJsonObject.value.length) + 1;
