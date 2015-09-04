@@ -11,12 +11,12 @@ var chuckJsonObject = {
         {
             "categories": [], 
             "id": 2, 
-            "joke": "MacGyver can build an airplane out of gum and paper clips. Chuck Norris can kill him and take it."
+            "joke": "Mac-Gyver can build an airplane out of gum and paper clips. Chuck Norris can kill him and take it."
         }, 
         {
             "categories": [], 
             "id": 3, 
-            "joke": "Chuck Norris doesn't read books. He stares them down until he gets the information he wants."
+            "joke": "Chuck Norris doesn't read books.He stares them down until he gets the information he wants."
         }, 
         {
             "categories": [], 
